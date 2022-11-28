@@ -1,0 +1,37 @@
+{  
+    "Navbar": {
+        "login": "LOGIN",
+        "home": "HOME",
+        "contact": "CONTACT",
+        "news":  "NEWS"
+    },
+    "Login": {
+        "text": "LOGIN SITEC",
+        "email": "Email",
+        "password": "Password"
+    },
+    "Home": {
+        "p1":"Welcome to SITEC",
+        "p2":"Contact information",
+        "p3":"Wenceslao Tejerina Norte 783 - Villa Dalcar - Río Cuarto",
+        "p4":"Attention schedule: From 9:00 to 13:00 and 16:00 to 21:00 hs | Tel: (0358) 4643036"
+    },
+    "news": {
+        "h2": "News",
+        "p1": "Sign up and train in the professions of the future",
+        "subject_dev": "Software Developement",
+        "subject_tur": "Turism and hotelery",
+        "subject_elec": "Electromechanics",
+        "description_tur": "You will be trained and focused on the generation of products and management of innovative, quality, sustainable and sustainable tourism and hotel services, which focus on meeting the needs of the local, national and international market. You can travel around the world supporting the tourist. .",
+        "description_elec": "You will be able to provide a preventive, predictive and corrective maintenance program for facilities and equipment. Execute maintenance of facilities and equipment. Communicate to the direct manager about problems that arise in the different facilities and equipment. Perform work procedures. .",
+        "description_dev": "It is part of one of the most sought-after professions today. The Senior Technician in Software Development will be able to design and produce software artifacts, reuse existing elements, implement them, program them, and take care of their optimization and maintenance  .",
+        "more": "Read more"
+    },
+    "contact":{
+        "text":"Contact Us",
+        "name":"Your Name",
+        "email":"Email",
+        "message":"Your message",
+        "submit":"SEND A MESSAGE"
+    }
+}

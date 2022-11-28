@@ -1,0 +1,38 @@
+{  
+    "Navbar": {
+        "welcomeMessage": "Hola",
+        "login": "INGRESAR",
+        "home": "INICIO",
+        "contact": "CONTACTO",
+        "news":  "NOVEDADES"
+    },
+    "Login": {
+        "text": "INGRESO SITEC",
+        "email": "Correo electrónico",
+        "password": "Contraseña"
+    },
+    "Home": {
+        "p1":"Bienvenido a SITEC",
+        "p2":"Información de contacto",
+        "p3":"Wenceslao Tejerina Norte 783 - Villa Dalcar - Río Cuarto",
+        "p4":"Horarios de atención: De 9:00 a 13:00 y de 16:00 a 21:00 hs | Tel: (0358) 4643036"
+    },
+    "news": {
+        "h2": "Novedades",
+        "p1": "Inscribite en el iTec y capacitate en las profesiones del futuro",
+        "subject_dev": "Desarrollo de Software",
+        "subject_tur": "Turismo y Hoteleria",
+        "subject_elec": "Electromecánica",
+        "description_tur":"Estarás capacitado y enfocado a la generación de productos y gestión de servicios turísticos y hoteleros innovadores, de calidad, sostenibles y sustentables, que se enfoquen en cubrir las necesidades del mercado local, nacional e internacional. Podras viajar por todo el mundo dando soporte al turista.",
+        "description_elec":"Serás capaz de dar programa de mantenimiento preventivo, predictivo y correctivo de las instalaciones y equipos. Ejecutar mantenimientos de instalaciones y equipos. Comunicar a jefe directo sobre problemas que se presenten en las diferentes instalaciones y equipos. Realizar procedimientos de trabajo.",
+        "description_dev": "Forma parte de una de las profesiones mas buscadas en la actualidad. El Técnico Superior en Desarrollo de Software estará capacitado para diseñar y producir artefactos de software, reutilizar elementos existentes, implementarlos, programarlos y ocuparse de su optimización y mantenimiento.",
+        "more": "Leer mas"
+    },
+    "contact":{
+        "text":"Contáctanos",
+        "name":"Tu nombre",
+        "email":"Correo electrónico",
+        "message":"Tu mensaje",
+        "submit":"ENVIAR UN MENSAJE"
+    }
+}     
