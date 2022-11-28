@@ -2,13 +2,14 @@ import { React} from 'react'
 import { useContext } from 'react'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
+import Layout from '../components/Layout'
 
 
-
-const Home = () => {
+export default function home ()  {
   const { language } = useContext(LanguageContext);
   const textsLanguage = langtranslate(language,'Home')
-    return (
+    return ( 
+      <Layout>
       <section className='bg-gray-200' >
           <div className=' custom-img contrast-125  saturate-150' >
           <div className='block sm:p-8 lg:p-24 text-white text-center bg-stone-900 bg-opacity-50 ' >
@@ -24,8 +25,9 @@ const Home = () => {
           </div>
           </div>                 
       </section>
+      </Layout>   
+    
     )
   }
 
 
-export default Home

@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 import SelectLanguage from './Lang'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
+import Link from 'next/link'
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -30,10 +30,10 @@ export default function Header() {
     }
   }, [theme])
   return (
-    <div className='flex items-center justify-between py-8 bg-gray 500 dark:bg-gray-800 shadow'>
-      <a className='ml-10' href='/Home'>
+    <div className='flex items-center justify-between py-8  dark:bg-gray-800 shadow '>
+      <Link className='ml-10' href='/'>
         <h2 className='text-2xl text-red-700 font-bold py-3'>SITEC</h2>
-      </a>
+      </Link>
       <nav>
         <section className='MOBILE-MENU flex lg:hidden'>
           <div className='HAMBURGER-ICON space-y-2' onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -78,22 +78,22 @@ export default function Header() {
         <ul className='DESKTOP-MENU hidden space-x-8 lg:flex mr-20'>
           <li>
             <button className='bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded-full'>
-              <NavLink to='/home'>{textsLanguage.home}</NavLink>
+              <Link href={'/'}>{textsLanguage.home}</Link>
             </button>
           </li>
           <li className='ml-2'>
             <button className='bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded-full'>
-              <NavLink to='/Novedades'>{textsLanguage.news}</NavLink>
+              <Link href={'/Novedades'}>{textsLanguage.news}</Link>
             </button>
           </li>
           <li className='ml-2'>
             <button className='bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded-full'>
-              <NavLink to='/Contacto'>{textsLanguage.contact}</NavLink>{' '}
+              <Link href={'/Contact'}>{textsLanguage.contact}</Link>{' '}
             </button>
           </li>
           <li className='ml-2'>
             <button className='bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-2 px-4 rounded-full'>
-              <NavLink to='/Login'>{textsLanguage.login}</NavLink>{' '}
+              <Link href={'/Login'}>{textsLanguage.login}</Link>{' '}
             </button>
           </li>
           <li className='ml-2'>

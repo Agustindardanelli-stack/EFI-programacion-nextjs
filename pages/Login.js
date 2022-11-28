@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
+import Layout from '../components/Layout'
 
 export default function Login({ onSubmit }) {
   const [change, setChange] = useState({
@@ -25,6 +26,8 @@ export default function Login({ onSubmit }) {
   const textsLanguage = langtranslate(language, 'Login')
   return (
     <section>
+      <Layout>
+
       <div className='w-[500px] mx-auto pt-28 pb-32'>
         <div className='w-full p-6 m-auto bg-white shadow-xl shadow-rose-600/40 ring ring-2 mb-2 mt-2 ring-red-600 lg:max-w-xl'>
           <h1 className='text-3xl font-semibold text-center text-red-600  uppercase decoration-wavy'>
@@ -41,7 +44,7 @@ export default function Login({ onSubmit }) {
                 type='email'
                 value={change.email}
                 className='block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40'
-              />
+                />
             </div>
             <div className='mb-2'>
               <label for='password' className='block text-sm font-semibold text-gray-800'>
@@ -53,7 +56,7 @@ export default function Login({ onSubmit }) {
                 value={change.password}
                 type='password'
                 className='block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40'
-              />
+                />
             </div>
             <div className='mt-6'>
               <button
@@ -67,6 +70,7 @@ export default function Login({ onSubmit }) {
           </form>
         </div>
       </div>
+    </Layout>
     </section>
   )
 }

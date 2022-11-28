@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Layout from '../components/Layout'
 const Materias = () => {
   const listadoMaterias = ['Matematica', 'Ingles', 'redes']
   return (
     <section>
+      <Layout> 
+
       <h1 className='text-center text-4xl font-bold text-gray-700 py-6'>Materias</h1>
       <div class='overflow-x-auto relative shadow-md sm:rounded-lg'>
         <table class='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
@@ -31,7 +33,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Matematica y Logica
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -55,7 +57,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Arquitectura de las Computadoras
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -67,7 +69,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Programación 1
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -79,7 +81,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Inglés
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -103,7 +105,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Matematica y Logica
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -127,7 +129,7 @@ const Materias = () => {
               <th
                 scope='row'
                 class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white'
-              >
+                >
                 Arquitectura de las Computadoras
               </th>
               <td class='py-4 px-6'>1.ero</td>
@@ -138,6 +140,7 @@ const Materias = () => {
           </tbody>
         </table>
       </div>
+     </Layout>
     </section>
   )
 }
