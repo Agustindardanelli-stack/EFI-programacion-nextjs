@@ -59,19 +59,31 @@ export default function Header() {
                 <line x1='6' y1='6' x2='18' y2='18' />
               </svg>
             </div>
-            <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]'>
+            <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] '>
               <li className='border-b border-gray-400 my-8 uppercase'>
-                <a href='/Home'>{textsLanguage.home}</a>
+                <a href='/'>{textsLanguage.home}</a>
               </li>
               <li className='border-b border-gray-400 my-8 uppercase'>
                 <a href='/Login'>{textsLanguage.login}</a>
               </li>
               <li className='border-b border-gray-400 my-8 uppercase'>
-                <a href='/novedades'>{textsLanguage.news}</a>
+                <a href='/Novedades'>{textsLanguage.news}</a>
               </li>
               <li className='border-b border-gray-400 my-8 uppercase'>
-                <a href='/contacto'>{textsLanguage.contact}</a>
+                <a href='/Contact'>{textsLanguage.contact}</a>
               </li>
+              <li className='border-b border-gray-400 my-8 uppercase'>
+            <SelectLanguage />
+              </li>
+              <li className='border-b border-gray-400 my-8 uppercase'>
+            <button
+              type='button'
+              onClick={handleThemeSwitch}
+              className='fixed z-10 right-2 top-2 bg-slate-500 text-lg p-1 rounded-md'
+            >
+              {theme === 'dark' ? '🌙' : '🌞'}
+            </button>
+          </li>
             </ul>
           </div>
         </section>

@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 const Novedades = () => {
     const { language } = useContext(LanguageContext);
     const textsLanguage = langtranslate(language,'news')
+
 return (
 <div>
     <Layout>

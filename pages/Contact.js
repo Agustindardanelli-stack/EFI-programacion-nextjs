@@ -10,8 +10,8 @@ const ContactForm = () => {
 
   return (
    
+   
     <div className='flex flex-col items-center justify-center h-auto  bg-gray-600'>
-      <Layout>
       <div className=' pt-0'>
         <h3 className='text-center text-gray-400 text-s mt-9'>{textsLanguage.text}</h3>
       </div>
@@ -51,8 +51,9 @@ const ContactForm = () => {
           </button>
         </div>
       </form>
-     </Layout>
+    
     </div>    
+    
   )
 }
 export default ContactForm
