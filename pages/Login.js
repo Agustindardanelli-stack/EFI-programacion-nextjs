@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
 import Layout from '../components/Layout'
+import Head from 'next/head'
 
 export default function Login({ onSubmit }) {
   const [change, setChange] = useState({
@@ -27,9 +28,14 @@ export default function Login({ onSubmit }) {
   return (
     <section>
       <Layout>
+      <Head>
+          <title>Login</title>
+          <meta name='description' content='Pagina de Login'></meta>
+          <link rel="icon" href="/logoitec.ico" />        
+      </Head>
 
-      <div className='w-[500px] mx-auto pt-28 pb-32'>
-        <div className='w-full p-6 m-auto bg-white shadow-xl shadow-rose-600/40 ring ring-2 mb-2 mt-2 ring-red-600 lg:max-w-xl'>
+      <div className='w-[250px] mx-auto  pt-28 pb-32'>
+        <div className='w-full p-6 m-auto bg-white  ring ring-2 mb-2 mt-2 ring-red-600 lg:max-w-xl'>
           <h1 className='text-3xl font-semibold text-center text-red-600  uppercase decoration-wavy'>
             {textsLanguage.text}
           </h1>

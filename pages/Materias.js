@@ -1,14 +1,20 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Head from 'next/head'
 const Materias = () => {
   const listadoMaterias = ['Matematica', 'Ingles', 'redes']
   return (
     <section>
       <Layout> 
+      <Head>
+        <title>Materias</title>
+        <meta name='description' content='Pagina de Materias'></meta>
+        <link rel="icon" href="/logoitec.ico" />        
+      </Head>
 
-      <h1 className='text-center text-4xl font-bold text-gray-700 py-6'>Materias</h1>
+      <h1 className='text-center text-4xl font-bold text-gray-700 py-6 underline underline-offset-2'>Materias</h1>
       <div class='overflow-x-auto relative shadow-md sm:rounded-lg'>
-        <table class='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
+        <table class='w-full text-sm text-left text-gray-500 dark:text-gray-400 border border-black mb-14 mt-'>
           <thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
             <tr>
               <th scope='col' class='py-3 px-6'>

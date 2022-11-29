@@ -3,19 +3,27 @@ import { useContext } from 'react'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
 import Layout from '../components/Layout'
+import Head from 'next/head'
 
 const ContactForm = () => {
   const { language } = useContext(LanguageContext)
   const textsLanguage = langtranslate(language, 'contact')
 
   return (
-   
-   
+    
+    
+    <Layout>
+   <section>
+   <Head>
+   <title>Contacto</title>
+        <meta name='description' content='Pagina de Contacto'></meta>
+        <link rel="icon" href="/logoitec.ico" />        
+      </Head>
     <div className='flex flex-col items-center justify-center h-auto  bg-gray-600'>
       <div className=' pt-0'>
         <h3 className='text-center text-gray-400 text-s mt-9'>{textsLanguage.text}</h3>
       </div>
-      <form className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-28 mt-28'>
+      <form className='bg-white shadow-md rounded px-4 pt-1 pb-8 mb-32 mt-10 box-border'>
         <div className='mb-3 pt-0'>
           <input
             type='text'
@@ -50,10 +58,10 @@ const ContactForm = () => {
             {textsLanguage.submit}
           </button>
         </div>
-      </form>
-    
-    </div>    
-    
+      </form>    
+    </div>  
+    </section>  
+    </Layout>    
   )
 }
 export default ContactForm

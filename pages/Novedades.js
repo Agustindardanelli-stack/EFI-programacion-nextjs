@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../context/Context'
 import { langtranslate } from '../locales/chooseLang'
 import Layout from '../components/Layout'
+import Head from 'next/head'
 const Novedades = () => {
     const { language } = useContext(LanguageContext);
     const textsLanguage = langtranslate(language,'news')
@@ -10,7 +11,11 @@ const Novedades = () => {
 return (
 <div>
     <Layout>
-
+    <Head>
+   <title>Novedades</title>
+        <meta name='description' content='Pagina de Novedades'></meta>
+        <link rel="icon" href="/logoitec.ico" />        
+      </Head>
     <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
